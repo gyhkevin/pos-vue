@@ -1,12 +1,22 @@
 <<template>
     <div class="pos">
-        <i class="icon iconfont icon-hanbao pos"></i>
-      Hello Pos Demo!
+        <el-row>
+            <el-col :span="7">
+                我是订单
+            </el-col>
+            <el-col>
+                我是产品
+            </el-col>
+        </el-row>
     </div>
 </template>
 <script>
 export default {
-  name: 'Pos'
+  name: 'Pos',
+  mounted: function () {
+    var orderHeight = document.body.clientHeight
+    document.getElementById('order-list').style.height = orderHeight + 'px'
+  }
 }
 </script>
 <style scoped>
