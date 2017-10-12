@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Pos",
             "program": "${workspaceRoot}/build/dev-server.js"
         }
     ]
